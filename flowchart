@@ -1,0 +1,16 @@
+digraph {
+	A [label="data_source - 11 col"]
+	B [label=DateTime]
+	C [label=Numeric]
+	D [label="ModeCatImputer-StringCast-DateTimeTransformer"]
+	E [label=MeanImputer]
+	F [label=StandardScalerWrapper]
+	G [label=RandomForestClassifier]
+	A -> B [label="1 col"]
+	A -> C [label="10 col"]
+	B -> D
+	C -> E
+	D -> F [label="10 col"]
+	E -> F [label="1 col"]
+	F -> G
+}

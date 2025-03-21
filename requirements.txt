@@ -1,0 +1,11 @@
+azureml-train-automl-runtime
+inference-schema
+xgboost
+prophet
+azureml-interpret
+azureml-defaults
+numpy
+pandas
+scikit-learn
+holidays
+psutil
