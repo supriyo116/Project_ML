@@ -23,9 +23,10 @@ def signal(df_5m: pd.DataFrame) -> int:
 
         # Make prediction
         features = ["timestamp",
-            "open", "high", "low", "close", "volume",
-            "MACD_12_26_9", "MACDh_12_26_9", "MACDs_12_26_9","RSI_14","STOCHk_14_3_3","STOCHd_14_3_3","BBL_5_2.0","BBM_5_2.0","BBU_5_2.0","BBB_5_2.0","BBP_5_2.0","SUPERT_7_3.0","OBV","SUPERTd_7_3.0",
-        ]
+                             "open", "high", "low", "close", "volume",
+                             "MACD_12_26_9", "RSI_14", "STOCHk_14_3_3",
+                             "BBP_5_2.0", "SUPERTd_7_3.0", "OBV", "treasury_yield"
+                             ]
 
         # Extract only the latest row for these features
         latest_features = df_5m[features].iloc[[-1]]

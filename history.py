@@ -12,7 +12,7 @@ access_token = config["access_token"]
 fyers = fyersModel.FyersModel(client_id=client_id, is_async=False, token=access_token, log_path="")
 
 now = datetime.datetime.now().timestamp()
-threedaysago = datetime.datetime.now() - datetime.timedelta(days=1)
+threedaysago = datetime.datetime.now() - datetime.timedelta(days=3)
 threedaysago = threedaysago.timestamp()
 
 
